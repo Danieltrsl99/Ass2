@@ -1,0 +1,146 @@
+@font-face {
+  font-family: Anton;
+  src: url("/static/fonts/Anton-Regular.ttf") format("truetype");
+}
+
+:root {
+    --bg-color: #edf6f9;
+    --subheader-color: #006d77;
+    --link-color: #e29578;
+    --text-color: rgba(0, 0, 0, 0.8);
+    --button-color: #83c5be;
+}
+
+html {
+    background-color: var(--bg-color);
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto",
+    "Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans",
+    "Helvetica Neue",sans-serif;
+    margin: 0px;
+}
+
+main {
+    min-height: 100%;
+}
+
+.welcome-page {
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.logo {
+    width: 34em;
+    max-width: 85%;
+    margin: 3em auto auto;
+}
+
+.design-button {
+    padding: .3em;
+    border: none;
+    font-family: Anton;
+    color: #fff;
+    font-size: 350%;
+    max-width: 80%;
+    box-shadow: 0 16px 0 0 var(--subheader-color);
+    background-color: var(--button-color);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    transition: all .15s;
+    transform: translateY(0px);
+    border-radius: .1em;
+    text-decoration: none;
+}
+
+.design-button:hover {
+    box-shadow: 0 12px 0 0 var(--subheader-color);
+    transform: translateY(4px);
+}
+
+.design-button:active {
+    box-shadow: 0 1px 0 0 var(--subheader-color);
+    transform: translateY(15px);
+}
+    
+.explanation {
+    max-width: 45em;
+    padding: 1em;
+    margin: 1em auto auto;
+}
+
+h1 {
+    font-family: Anton;
+    color: var(--subheader-color);
+    font-size: 2.5rem;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+p {
+    text-align: justify;
+    margin-top: 0;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.explanation p a {
+    color: var(--link-color);
+}
+
+footer {
+    background-color: var(--subheader-color);
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    width: 100%;
+}
+
+.footer-content {
+    padding: .8em;
+    max-width: 45em;
+    margin: auto;
+}
+
+footer a {
+    color: var(--link-color);
+}
+
+.qr-placeholder {
+    background-color: white;
+    width: 100%;
+    min-width: 200px;
+    min-height: 200px;
+}
+
+.donation {
+    border-radius: 0.5em;
+    border: 0.3em solid #3B8A91;
+    margin-top: 1.5em;
+    padding: 1em;
+    background-color: #AFE2DC;
+}
+
+.qr-image-example {
+    width: 50%;
+}
